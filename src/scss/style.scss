@@ -1,0 +1,62 @@
+@import 'fonts.scss';
+@import 'header.scss';
+@import 'forms.scss';
+@import 'home.scss';
+@import 'works.scss';
+@import 'icons.scss';
+@import 'blog.scss';
+@import url(https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900);
+
+
+$fontFamily:"Heebo";
+$minWidth: 320px;
+$maxWidth: 1152px;
+$maxWidthConteiner: 856px;
+$md1: $maxWidthConteiner + 12px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+
+
+
+
+
+body{
+    font-family: Heebo;
+    font-size: 14px;
+}
+
+body._lock{
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_content_container {
+    max-width: $maxWidthConteiner;
+    margin: 0 auto;
+    @media (max-width: $md2) {
+              max-width: 750px;
+    }
+    @media (max-width: $md3) {
+              max-width: none;
+              padding: 0 10px;
+    }
+    }
+.page {
+    padding: 90px 0px 0px 0px;
+    flex: 1 1 auto;
+    @media (max-width: $md3) {
+        padding: 30px 0px 0px 0px;
+        }
+}    
+
+   
+    
+    

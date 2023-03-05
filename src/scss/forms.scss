@@ -1,0 +1,57 @@
+.form {
+    &_row {
+
+    }
+    &_column {
+
+    }
+    &_line {
+
+    }
+    &_input {
+
+    }
+
+    &_button {
+
+    }
+    &_error {
+
+    }
+}
+
+.btn {
+    background-color: #ff6464;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #fff;
+    height: 47px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: center;
+    text-align: center;
+    transition: background 0.3s else 0s;
+    @media (min-width: 992px) {
+        &:hover {
+           background-color: #be4141;    
+        }
+    }
+    &_fw {
+        width: 100%;
+    }
+}
+._ibg {
+    position: relative;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    };
+}
